@@ -1,0 +1,48 @@
+<core:FragmentDefinition xmlns:table="sap.ui.table"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+	xmlns:smartTable="sap.ui.comp.smarttable"
+    xmlns:smartField="sap.ui.comp.smartfield"
+     xmlns:smartVariantManagement="sap.ui.comp.smartvariants"
+>
+
+
+    <!-- <smartFilterBar:SmartFilterBar
+        id="smartFilterBar"
+        entitySet="LeaveHistory"
+        persistencyKey="SmartFilter_Explored"
+        considerAnalyticalParameters="true"
+    >
+        <smartFilterBar:layoutData>
+            <FlexItemData shrinkFactor="0" />
+        </smartFilterBar:layoutData>
+    </smartFilterBar:SmartFilterBar> -->
+     <smartTable:SmartTable
+        id="1"
+        initiallyVisibleFields="ID,CREATEDAT,CREATEDBY,MODIFIEDAT,MODIFIEDBY,SNO,LEAVETYPE_ID,STARTDATE,ENDDATE,
+	DESCRIPTION,POSTINGDATE,ADMINREMARK,STATUS" 
+        entitySet="LeaveHistory"
+        smartFilterId="smartFilterBar"
+        tableType="ResponsiveTable"
+        showFullScreenButton="true"
+        beforeExport="onBeforeExport"
+        demandPopin="true"
+        useVariantManagement="true"
+        useTablePersonalisation="true"
+        header="Leave History Records" 
+        showRowCount="true"
+        persistencyKey="SmartTable_Explored"
+        enableAutoBinding="true"
+        class="sapUiResponsiveContentPadding"
+    >
+    
+        <smartTable:layoutData>
+            <FlexItemData
+                growFactor="1"
+                baseSize="0%"
+            />
+        </smartTable:layoutData>
+    </smartTable:SmartTable> 
+
+</core:FragmentDefinition>

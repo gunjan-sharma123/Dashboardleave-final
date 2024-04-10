@@ -1,0 +1,54 @@
+{
+	"selectedKey": "page2",
+	"navigation": [
+		{
+			"title": "My Profile",
+			"icon": "sap-icon://employee",
+			"expanded": true,
+			"key": "root1"
+		},
+		{
+			"title": "Changed password",
+			"icon": "sap-icon://building",
+			"key": "page1"
+		},
+		{
+			"title": "Leaves",
+			"icon": "sap-icon://bookmark",
+			"expanded": false,
+			"items": [
+				{
+					"title": "Employee Record",
+					"key": "root2"
+				},
+				{
+					"title": "Leave History",
+					"key": "page2"
+				}
+			]
+		}
+	],
+	"fixedNavigation": [
+		{
+			"title": "Sign Out",
+			"icon": "sap-icon://employee"
+		}
+	],
+	"headerItems": [
+		{
+			"text": "File"
+		},
+		{
+			"text": "Edit"
+		},
+		{
+			"text": "View"
+		},
+		{
+			"text": "Settings"
+		},
+		{
+			"text": "Help"
+		}
+	]
+}
